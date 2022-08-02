@@ -5,11 +5,11 @@ const connect = require("./configs/db");
 const {
   register,
   login,
-} = require("./controllers/auth.controller");
+} = require("./controllers/authController");
 
-const userController = require("./controllers/user.controller");
+const userController = require("./controllers/userController");
 
-const productController = require("./controllers/mobile.controller");
+const productController = require("./controllers/productController");
 
 const app = express();
 

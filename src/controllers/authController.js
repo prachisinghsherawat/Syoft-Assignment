@@ -9,7 +9,6 @@ const createToken = (user)=>{
 }
 
 const register = async(req,res)=>{
-
     try{
         let user = await User.findOne({Email:req.body.Email}).lean().exec();
 
@@ -27,7 +26,6 @@ const register = async(req,res)=>{
 }
 
 const login = async(req,res)=>{
-
     try{
         let user = await User.findOne({Email:req.body.Email});
 
